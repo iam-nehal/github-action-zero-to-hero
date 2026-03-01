@@ -5,7 +5,7 @@ name: Hello
 on: 
   push:
     branches: [main]
-#whever there is a change in .html file then run the job   
+#whever there is a change in .html file then workflow runs
     paths:
       - '**.html'
 
