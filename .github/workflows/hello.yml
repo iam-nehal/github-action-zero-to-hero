@@ -22,4 +22,12 @@ jobs:
 
       - name: say hello to Nehal
         run: echo "Hello $MY_NAME"
+        
+  details:
+    runs-on: ubuntu-latest
+    steps:
+      - name: version of python & docker
+        run: python --version && docker --version
+  
+        
   
