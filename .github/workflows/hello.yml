@@ -14,10 +14,12 @@ jobs:
   greet:
   #this is github runner, each job runs on a runner
     runs-on: ubuntu-latest
+    env:
+      MY_NAME: Nehal
     steps:
       - name: say hello to user
         run: echo "Hello Dosto"
 
-      - name: say hello to username
-        run: echo "Hello $USER"
+      - name: say hello to Nehal
+        run: echo "Hello $MY_NAME"
   
