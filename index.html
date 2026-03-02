@@ -1,1 +1,243 @@
-<h1> Hello Dosto</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nehal Modekar | DevOps Engineer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    overflow-x:hidden;
+}
+
+.background-blur{
+    position:fixed;
+    width:600px;
+    height:600px;
+    background: radial-gradient(circle,#00f5ff55,transparent);
+    filter:blur(120px);
+    top:-200px;
+    right:-200px;
+    z-index:-1;
+}
+
+nav{
+    position:fixed;
+    width:100%;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    backdrop-filter: blur(10px);
+    background:rgba(255,255,255,0.05);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+nav h2{
+    font-weight:600;
+    letter-spacing:2px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+nav ul li:hover{
+    color:#00f5ff;
+    transform:translateY(-3px);
+}
+
+section{
+    min-height:100vh;
+    padding:120px 10% 50px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    font-weight:700;
+    background:linear-gradient(90deg,#00f5ff,#ff00c8);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:1.2rem;
+    opacity:0.8;
+}
+
+.btn{
+    margin-top:30px;
+    padding:12px 30px;
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,0.3);
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    color:white;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+.btn:hover{
+    background:#00f5ff;
+    color:#000;
+    transform:scale(1.1);
+}
+
+.glass-card{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:20px;
+    padding:30px;
+    backdrop-filter:blur(20px);
+    transition:0.4s;
+}
+
+.glass-card:hover{
+    transform:translateY(-10px) scale(1.02);
+    box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+.skills-grid, .projects-grid{
+    margin-top:40px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+h2.section-title{
+    font-size:2rem;
+    margin-bottom:20px;
+    position:relative;
+}
+
+h2.section-title::after{
+    content:"";
+    width:80px;
+    height:4px;
+    background:#00f5ff;
+    position:absolute;
+    bottom:-10px;
+    left:0;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.4);
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.5rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="background-blur"></div>
+
+<nav>
+    <h2>Nehal M</h2>
+    <ul>
+        <li onclick="scrollToSection('about')">About</li>
+        <li onclick="scrollToSection('skills')">Skills</li>
+        <li onclick="scrollToSection('projects')">Projects</li>
+        <li onclick="scrollToSection('contact')">Contact</li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>DevOps Engineer & Cloud Enthusiast</h1>
+    <p>Building scalable systems, automating workflows & mastering CI/CD pipelines.</p>
+    <button class="btn" onclick="scrollToSection('projects')">View My Work</button>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="glass-card">
+        <p>
+            I'm Nehal, a DevOps enthusiast from India focused on Docker, Git, CI/CD pipelines, and cloud-native architectures.
+            I enjoy solving infrastructure problems, automating deployments, and building production-ready systems.
+            Currently strengthening my skills in monitoring, containerization, and real-world DevOps practices.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills-grid">
+        <div class="glass-card">Docker & Containerization</div>
+        <div class="glass-card">Git & GitHub Actions (CI/CD)</div>
+        <div class="glass-card">Linux (Rocky Linux, Ubuntu)</div>
+        <div class="glass-card">VMware & Virtualization</div>
+        <div class="glass-card">Monitoring & Logging</div>
+        <div class="glass-card">Cloud & Automation</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects-grid">
+        <div class="glass-card">
+            <h3>CI/CD Pipeline Automation</h3>
+            <p>Built GitHub Actions workflow for automated build, test, and deployment.</p>
+        </div>
+        <div class="glass-card">
+            <h3>Dockerized Web Application</h3>
+            <p>Containerized full-stack application with optimized multi-stage builds.</p>
+        </div>
+        <div class="glass-card">
+            <h3>Monitoring & Alerting Setup</h3>
+            <p>Configured alert assignment and monitoring dashboards for production systems.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="glass-card">
+        <p>Email: nehal.devops@example.com</p>
+        <p>Location: India</p>
+        <button class="btn">Let's Connect</button>
+    </div>
+</section>
+
+<footer>
+    © 2026 Nehal M | Built with Passion & DevOps Mindset
+</footer>
+
+<script>
+function scrollToSection(id){
+    document.getElementById(id).scrollIntoView({behavior:'smooth'});
+}
+</script>
+
+</body>
+</html>
