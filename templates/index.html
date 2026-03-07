@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nehal Modekar | DevOps Engineer</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* Container */
+
+.container{
+max-width:900px;
+padding:40px;
+text-align:center;
+}
+
+/* Title */
+
+h1{
+font-size:42px;
+margin-bottom:10px;
+background:linear-gradient(90deg,#00d2ff,#7b2ff7);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+/* Badge */
+
+.badge{
+display:inline-block;
+padding:6px 16px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,0.4);
+margin-bottom:30px;
+}
+
+/* Glass Cards */
+
+.cards{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+.card{
+backdrop-filter:blur(12px);
+background:rgba(255,255,255,0.08);
+border:1px solid rgba(255,255,255,0.2);
+padding:20px;
+border-radius:14px;
+width:200px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+/* Tech Stack */
+
+.tech{
+margin-top:40px;
+}
+
+.tech-icons{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+margin-top:20px;
+}
+
+/* Animated Icons */
+
+.icon{
+padding:15px 20px;
+border-radius:10px;
+background:rgba(255,255,255,0.1);
+backdrop-filter:blur(8px);
+animation:float 3s ease-in-out infinite;
+}
+
+.icon:nth-child(2){animation-delay:0.3s}
+.icon:nth-child(3){animation-delay:0.6s}
+.icon:nth-child(4){animation-delay:0.9s}
+.icon:nth-child(5){animation-delay:1.2s}
+
+@keyframes float{
+0%{transform:translateY(0)}
+50%{transform:translateY(-8px)}
+100%{transform:translateY(0)}
+}
+
+footer{
+margin-top:40px;
+opacity:0.7;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Nehal Modekar</h1>
+<div class="badge">DevOps Engineer</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Framework</h3>
+<p>Flask</p>
+</div>
+
+<div class="card">
+<h3>Runtime</h3>
+<p>Python</p>
+</div>
+
+<div class="card">
+<h3>Deploy</h3>
+<p>AWS ECS</p>
+</div>
+
+</div>
+
+<div class="tech">
+
+<h2>Tech Stack</h2>
+
+<div class="tech-icons">
+
+<div class="icon">🐳 Docker</div>
+<div class="icon">☸ Kubernetes</div>
+<div class="icon">⚙ GitHub Actions</div>
+<div class="icon">☁ AWS</div>
+<div class="icon">🐍 Python</div>
+
+</div>
+
+</div>
+
+<footer>
+
+<p>© 2026 Nehal Modekar | DevOps Portfolio</p>
+
+</footer>
+
+</div>
+
+</body>
+</html>

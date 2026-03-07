@@ -1,0 +1,2 @@
+flake8 #python linter to check and anlyze code errors
+flask
